@@ -19,7 +19,7 @@ public class CarApi {
     }
 
     @PostMapping("/addCar")
-    public List<Car> addCar(@RequestBody Car car) {
+    public boolean addCar(@RequestBody Car car) {
         return carManager.addCar(car);
     }
 }
